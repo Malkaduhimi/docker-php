@@ -1,4 +1,4 @@
-FROM php:5.5-cli
+FROM php:5.4-cli
 MAINTAINER system@kitpages.fr
 
 # Install git
@@ -29,7 +29,7 @@ RUN apt-get install -y\
 
 # Install xdebug
 RUN pecl install xdebug &&\
-    echo "zend_extension=/usr/local/lib/php/extensions/no-debug-non-zts-20121212/xdebug.so" > /usr/local/etc/php/conf.d/ext-xdebug.ini
+    echo "zend_extension=/usr/local/lib/php/extensions/no-debug-non-zts-20100525/xdebug.so" > /usr/local/etc/php/conf.d/ext-xdebug.ini
 
 # Install mongo
 RUN pecl install mongo &&\
