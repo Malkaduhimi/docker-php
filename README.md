@@ -1,5 +1,5 @@
-# docker-php:5.5
-Docker php 5.5 environnement with basic extensions set
+# docker-php:latest
+Docker php **5.5** environnement with basic extensions set
 Composer included
 
 ## Extensions
