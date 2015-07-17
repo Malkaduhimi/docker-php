@@ -1,4 +1,4 @@
-FROM php:5.5-cli
+FROM php:7.0-cli
 MAINTAINER system@kitpages.fr
 
 # Install git
@@ -26,14 +26,6 @@ RUN apt-get install -y\
     g++ \
     libicu-dev &&\
     docker-php-ext-install intl
-
-# Install xdebug
-RUN pecl install xdebug &&\
-    echo "zend_extension=/usr/local/lib/php/extensions/no-debug-non-zts-20121212/xdebug.so" > /usr/local/etc/php/conf.d/ext-xdebug.ini
-
-# Install mongo
-RUN pecl install mongo &&\
-    echo "extension=mongo.so" > /usr/local/etc/php/conf.d/ext-mongo.ini
 
 # Install zip extension
 RUN docker-php-ext-install zip

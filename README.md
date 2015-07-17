@@ -1,13 +1,11 @@
-# docker-php:latest
-Docker php **5.5** environnement with basic extensions set
+# docker-php:7.0
+Docker php **7.0** environnement with basic extensions set
 
 Composer included
 
 ## Extensions
 
 - gd
-- xdebug
 - zip
-- mongo
 - mbstring
 - mcrypt
